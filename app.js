@@ -8,4 +8,5 @@ app.router = Router;
 
 window.addEventListener("DOMContentLoaded", async () => {
   loadData();
+  Router.init();
 });
