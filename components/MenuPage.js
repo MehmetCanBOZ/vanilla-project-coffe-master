@@ -1,4 +1,4 @@
-export class MenuPage extends HTMLElement {
+export default class MenuPage extends HTMLElement {
   constructor() {
     super();
     this.root = this.attachShadow({ mode: "open" });
@@ -28,7 +28,6 @@ export class MenuPage extends HTMLElement {
   }
 
   render() {
-    console.log("app.store.menu :", app.store.menu);
     if (app.store.menu) {
       this.root.querySelector("#menu").innerHTML = "";
       for (let category of app.store.menu) {

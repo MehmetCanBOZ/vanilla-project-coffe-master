@@ -38,8 +38,6 @@ const Router = {
         }
     }
 
-    console.log("pageElement :", pageElement);
-
     if (pageElement) {
       const main = document.querySelector("main");
       main.innerHTML = "";
